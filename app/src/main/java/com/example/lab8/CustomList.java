@@ -77,6 +77,7 @@ public class CustomList extends ArrayAdapter<City> {
      * @return True if the city is deleted; False otherwise
      */
     public boolean deleteCity(City city) {
+        return cities.remove(city);
 
     }
 
