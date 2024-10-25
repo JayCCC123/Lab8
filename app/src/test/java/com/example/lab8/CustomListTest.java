@@ -63,6 +63,22 @@ public class CustomListTest {
         assertFalse(list.deleteCity(nonExistentCity), "deleteCity should return false when the city is not in the list");
     }
 
+    /**
+     * this checks if the number of cities in the list is counted correctly
+     */
+    @Test
+    public void countCitiesTest() {
+        list = MockCityList();
+        assertEquals(0, list.countCities(), "countCities should return 0 when the list is empty");
+        City city1 = new City("Toronto", "Ontario");
+        list.addCity(city1);
+        assertEquals(1, list.countCities(), "countCities should return 1 after adding one city");
+        City city2 = new City("Vancouver", "British Columbia");
+        list.addCity(city2);
+        assertEquals(2, list.countCities(), "countCities should return 2 after adding another city");
+
+    }
+
     }
 
 
