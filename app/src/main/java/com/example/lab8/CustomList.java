@@ -47,7 +47,7 @@ public class CustomList extends ArrayAdapter<City> {
     }
     /**
      * this gets size of the list
-     * @return
+     * @return the number of city in the list
      */
     public int getCount(){
         return cities.size();
@@ -64,11 +64,11 @@ public class CustomList extends ArrayAdapter<City> {
 
     /**
      * this returns a boolean statement of has a city or not
-     * @param city
-     * @return
+     * @param city city
+     * @return True if has city; False otherwise
      */
     public boolean hasCity(City city) {
-
+        return cities.contains(city);
     }
 
 }

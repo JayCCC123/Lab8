@@ -16,7 +16,7 @@ public class CustomListTest {
     private CustomList list;
     /**
      * create a mocklist for my citylist
-     * @return
+     * @return the list of objects
      */
     public CustomList MockCityList(){
         list = new CustomList(null,new ArrayList<>());
@@ -36,6 +36,9 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize + 1);
     }
 
+    /**
+     * check if selected city is in the list
+     */
     @Test
     public void hasCityTest() {
         list = MockCityList();
