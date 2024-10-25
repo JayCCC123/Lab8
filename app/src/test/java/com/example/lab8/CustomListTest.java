@@ -50,7 +50,19 @@ public class CustomListTest {
 
     }
 
+    /**
+     *check if the city is successfully deleted in the list
+     */
+    @Test
+    public void deleteCityTest() {
+        list = MockCityList();
+        City city = new City("Toronto", "Ontario");
+        list.addCity(city);
+        assertTrue(list.deleteCity(city), "deleteCity should return true when the city is successfully removed");
+        City nonExistentCity = new City("Vancouver", "British Columbia");
+        assertFalse(list.deleteCity(nonExistentCity), "deleteCity should return false when the city is not in the list");
+    }
 
-}
+    }
 
 

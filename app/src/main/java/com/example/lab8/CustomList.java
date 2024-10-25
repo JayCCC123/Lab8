@@ -71,4 +71,13 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.contains(city);
     }
 
+    /**
+     * this returns a boolean statement of whether a city is deleted in the list
+     * @param city city
+     * @return True if the city is deleted; False otherwise
+     */
+    public boolean deleteCity(City city) {
+
+    }
+
 }
