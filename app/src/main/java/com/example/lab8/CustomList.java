@@ -60,8 +60,15 @@ public class CustomList extends ArrayAdapter<City> {
      */
     public void addCity(City city){
         cities.add(city);
-
     }
 
+    /**
+     * this returns a boolean statement of has a city or not
+     * @param city
+     * @return
+     */
+    public boolean hasCity(City city) {
+
+    }
 
 }
